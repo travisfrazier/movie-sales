@@ -1,0 +1,12 @@
+@import '../../pages/partials/variables';
+
+.recharts-wrapper {
+  margin-right: -5rem;
+}
+.graph__container {
+  height: 225px;
+  svg {
+    margin-left: -1.5rem;
+    padding-left: -2rem;
+  }
+}

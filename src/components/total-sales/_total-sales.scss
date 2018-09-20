@@ -1,0 +1,64 @@
+@import '../../pages/partials/variables';
+
+.totSales {
+  background-color: $color-light;
+  padding: 1rem;
+  font-size: $font-s;
+  overflow: hidden;
+  @media only screen and (max-width: 890px) {
+    line-height: 1.35;
+  }
+  @media only screen and (max-width: 345px) {
+    font-size: $font-xs;
+    padding: 0.5rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: 715px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    &--value {
+      @media only screen and (max-width: 890px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+  &__title {
+    font-size: $font-l;
+    font-weight: $font-bold;
+  }
+  &__results {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: 890px) {
+      grid-template-columns: auto;
+    }
+  }
+  &__meters {
+    @media only screen and (max-width: 890px) {
+      display: flex;
+    }
+    @media only screen and (max-width: 715px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.totSales__loc--tab {
+  @media only screen and (max-width: 715px) {
+    display: none;
+  }
+}
+.totSales__loc--pho {
+  display: none;
+  @media only screen and (max-width: 715px) {
+    display: inline;
+  }
+}
