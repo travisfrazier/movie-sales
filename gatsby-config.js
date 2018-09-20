@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Mitchell UI Challenge',
+    title: 'Movie Sales'
   },
-  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass'],
+  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass']
 }
